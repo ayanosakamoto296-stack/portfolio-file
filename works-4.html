@@ -1,65 +1,85 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Organic Cafe</title>
-    <meta charset="UTF-8" />
-    <meta name="description" content="自家焙煎のコーヒーがお家で楽しめるOrganic Cafe"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/coffee-style.css" />
-  </head>
-  <body>
-    <!-- ヘッダー -->
-    <header>
-      <!-- ロゴ -->
-      <a href="works-4.html" id="logo">
-        <img src="coffee-images/logo.png" alt="トップページに戻る"/>
-      </a>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>SAMURAI ポートフォリオ</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="css/ress.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+</head>
 
-      <!-- PC用ナビゲーション -->
-      <nav id="nav-pc">
-        <a href="works-4.html#concept">CONCEPT</a>
-        <a href="works-4.html#product">PRODUCT</a>
-        <a href="works-4.html#contact">CONTACT</a>
-      </nav>
+<body>
+  <div class="wrapper">
 
-      <!-- スマホ用メニューボタン -->
-      <img id="menu-sp" src="coffee-images/button-menu.png" alt="ナビゲーションを開く" onclick="document.getElementById('nav-sp').style.display = 'block'">
-      </header>
+    <!-- header -->
+    <header class="header ">
+      <div class="container">
+        <h1 class="header-logo">
+          <a href="index.html">SAKAMOTO AYANO</a>
+        </h1>
+        <nav class="gnav">
+          <ul class="gnav-list">
+            <li class="gnav-item"><a href="index.html#works">WORKS</a></li>
+            <li class="gnav-item"><a href="index.html#skill">SKILL</a></li>
+            <li class="gnav-item"><a href="index.html#about">ABOUT</a></li>
+            <li class="gnav-item"><a href="index.html#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- /header -->
 
-      <!-- スマホ用ナビゲーション -->
-       <nav id="nav-sp">
-        <ul>
-          <li>
-          <img id="close" src="coffee-images/button-close.png" alt="ナビゲーションを閉じる" onclick="document.getElementById('nav-sp').style.display = 'none'">
-          </li>
-          <li>
-            <a id="logo-sp" href="works-4.html" onclick="document.getElementById('nav-sp').style.display = 'none'">
-            <img src="coffee-images/logo-sp.png" alt="トップページに戻る">
-            </a>
-          </li>
-          <li>
-            <a class="menu" href="works-4.html#concept" onclick="document.getElementById('nav-sp').style.display = 'none'">CONCEPT</a>
-          </li>
-          <li>
-            <a class="menu" href="works-4.html#product" onclick="document.getElementById('nav-sp').style.display = 'none'">PRODUCT</a>
-          </li>
-          <li>
-            <a class="menu" href="works-4.html#contact" onclick="document.getElementById('nav-sp').style.display = 'none'">CONTACT</a>
-          </li>
-        </ul> 
-      </nav>
+    <main class="content">
 
-    <main>
-      <article>
-        <!-- メインビジュアル -->
-        <section id="main-visual">
-          <div id="main-message">
-            <h1>Organic Cafe</h1>
-            <p>自家焙煎コーヒーが買えるお店</p>
+      <article class="article">
+        <div class="article-container">
+          <h2 class="article-title">美容室のHP</h2>
+          <div class="article-body">
+            <p>
+              <img src="img/works-detail/works-3.gif" alt="">
+            </p>
+            <p>
+              ヘアーサロンのHPになります。
+            </p>
+            <h3>URL</h3>
+            <p><a href="works-4-detail/" target="_blank" rel="noopener">ここにURLを入れてください。</a></p>
+            <h3>担当</h3>
+            <p>WordPress構築・コーディング</p>
+            <h3>サイトの目的</h3>
+            <p>店舗の認知と集客</p>
+            <h3>使用技術</h3>
+            <p>WordPress</p>
+            <h3>デザインについて</h3>
+            <p>
+              20~30代の女性のお客様が多い店舗のため、お客様の層に最適な画像素材を使用しております。
+            </p>
+            <h3>コーディングについて</h3>
+            <p>
+              トップ画面での画像スライド、口コミ情報の表示、GoogleMapでの店舗所在地の表示、お問い合わせフォームなどを実装させていただいております。
+            </p>
           </div>
-          <img src="coffee-images/main-image.jpg" alt="コーヒーをハンドドリップで淹れる画像"/>
-        </section>
+          <div class="home-link">
+            <a href="index.html#works">Works一覧へ</a>
+          </div>
+        </div>
       </article>
+
+      <div class="page-top" id="js-page-top">
+        <span class="material-icons-outlined">expand_less</span>
+      </div>
     </main>
-  </body>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="copyright">&copy;Sakamoto Works</div>
+    </footer>
+    <!-- /footer -->
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type='text/javascript' src="js/script.js"></script>
+</body>
 </html>
